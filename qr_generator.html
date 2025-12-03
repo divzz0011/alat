@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <a href="index.html" class="back-link">← Kembali ke Dashboard</a>
+    <h1>Generator Teks / URL ke QR</h1>
+
+    <section class="controls">
+      <div class="mode-block">
+        <label for="inputText">Masukkan Teks atau URL</label>
+        <textarea id="inputText" placeholder="Tulis teks atau tempel URL di sini"></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="generateQRBtn">Buat QR</button>
+      </div>
+    </section>
+
+    <section class="result">
+      <h2>Hasil QR Code</h2>
+      <div id="qrWrap" class="qr-wrap">
+        <div id="loadingIndicator" class="hidden">Memproses...</div>
+      </div>
+      
+            <div class="actions">
+        <button id="copyQRBtn" disabled>Salin QR (Data URL)</button>
+        <button id="downloadQRBtn" disabled>Download QR</button>
+      </div>
+    </section>
+
+    <footer>
+      <small>Divzz • QR Generator</small>
+    </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+<footer>
+    <small>Create By Divzz And Team | Frontend Tools</small>
+</footer>
+</main>
+</body>
+</html>
