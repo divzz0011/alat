@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Daftar Tugas (To-Do List)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <a href="index.html" class="back-link">← Kembali ke Dashboard</a>
+        <h1>Daftar Tugas Harian 📝</h1>
+        <p class="note">Tugas Anda disimpan secara lokal di browser Anda.</p>
+
+        <section class="controls">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Tambahkan tugas baru..." required>
+                <select id="prioritySelect">
+                    <option value="low">Prioritas: Rendah</option>
+                    <option value="medium">Prioritas: Sedang</option>
+                    <option value="high">Prioritas: Tinggi</option>
+                </select>
+            </div>
+            <div class="actions">
+                <button id="addTaskBtn">Tambahkan Tugas</button>
+            </div>
+        </section>
+
+        <section class="result">
+            <h2>Daftar Tugas Aktif</h2>
+            <div class="sorting-options">
+                Urutkan berdasarkan: 
+                <button id="sortPriorityBtn">Prioritas</button>
+                <button id="sortDateBtn">Tanggal</button>
+            </div>
+            <ul id="taskList">
+                </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <small>Create By Divzz And Team | Frontend Tools</small>
+    </footer>
+</main>
+</body>
+</html>

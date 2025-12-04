@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Penghitung Karakter & Kata</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <a href="index.html" class="back-link">← Kembali ke Dashboard</a>
+        <h1>Penghitung Karakter & Kata 🔢</h1>
+        <p class="description">Hitung jumlah karakter dan kata secara otomatis saat Anda mengetik.</p>
+
+        <section class="controls">
+            <h2>Area Teks</h2>
+            <div class="input-group">
+                <textarea id="textInput" rows="10" placeholder="Mulai ketik di sini..."></textarea>
+            </div>
+        </section>
+
+        <section class="result">
+            <h2>Statistik Teks</h2>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <h4>Jumlah Karakter</h4>
+                    <p id="charCount" class="value-highlight">0</p>
+                </div>
+                <div class="summary-card balance-card">
+                    <h4>Jumlah Kata</h4>
+                    <p id="wordCount" class="balance-value">0</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

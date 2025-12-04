@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kalkulator HPP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <a href="index.html" class="back-link">← Kembali ke Dashboard</a>
+        <h1>Kalkulator Harga Pokok Penjualan (HPP) 📊</h1>
+        <p class="description">Hitung Harga Pokok Penjualan (HPP) produk Anda dengan cepat.</p>
+
+        <section class="controls">
+            <h2>Data Input (dalam IDR)</h2>
+            <div class="input-group">
+                <label for="persediaanAwal">1. Persediaan Barang Dagang Awal:</label>
+                <input type="number" id="persediaanAwal" value="0" min="0" step="1000">
+            </div>
+            <div class="input-group">
+                <label for="pembelianBersih">2. Pembelian Bersih:</label>
+                <input type="number" id="pembelianBersih" value="0" min="0" step="1000">
+            </div>
+            <div class="input-group">
+                <label for="persediaanAkhir">3. Persediaan Barang Dagang Akhir:</label>
+                <input type="number" id="persediaanAkhir" value="0" min="0" step="1000">
+            </div>
+            
+            <div class="actions">
+                <button id="calculateHppBtn">Hitung HPP</button>
+            </div>
+            <p id="hppError" class="note hidden" style="color: red;"></p>
+        </section>
+
+        <section class="result">
+            <h2>Hasil Perhitungan</h2>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <h4>Barang Tersedia untuk Dijual</h4>
+                    <p id="barangTersedia" class="value-highlight">IDR 0</p>
+                </div>
+                <div class="summary-card balance-card">
+                    <h4>Harga Pokok Penjualan (HPP)</h4>
+                    <p id="hppResult" class="balance-value">IDR 0</p>
+                </div>
+            </div>
+
+            <h3>Rumus HPP:</h3>
+            <p class="note">$\text{HPP} = (\text{Persediaan Awal} + \text{Pembelian Bersih}) - \text{Persediaan Akhir}$</p>
+        </section>
+    </main>
+    <footer>
+        <small>Create By Divzz And Team | Frontend Tools</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

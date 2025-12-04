@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aplikasi Cuaca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <a href="index.html" class="back-link">← Kembali ke Dashboard</a>
+        <h1>Aplikasi Cuaca Lokal ☁️</h1>
+        <p class="note">prakiraan cuaca untuk hari ini saja</p>
+
+        <section class="controls">
+            <div class="input-group">
+                <label for="cityInput">Masukkan Nama Kota/Tempat:</label>
+                <input type="text" id="cityInput" placeholder="Contoh: Jakarta" required>
+            </div>
+            <div class="actions">
+                <button id="getWeatherBtn">Cari Cuaca</button>
+            </div>
+        </section>
+
+        <section class="result">
+            <div id="weatherResult" class="weather-card hidden">
+                <h2 id="cityName"></h2>
+                <p id="temp"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <img id="weatherIcon" alt="Ikon Cuaca">
+            </div>
+            <div id="weatherError" class="note hidden"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <small>Create By Divzz And Team | Frontend Tools</small>
+    </footer>
+</main>
+</body>
+</html>
